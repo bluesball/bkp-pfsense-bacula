@@ -1,14 +1,10 @@
 # BKP do pfsense
 
+Script para fazer bkp das configs do pfsense e armazenar com bacula usando o curl
 
-Script para fazer bkp das configs do pfsense e armazenar com bacula
+## Versao pfsense
 
-Kibado da documentacao oficial do pfsense e do site do bacula.lat: 
-
-```sh
-https://docs.netgate.com/pfsense/en/latest/backup/remote-backup.html
-https://www.bacula.lat/pre-script-para-backup-de-firewalls-pfsense/
-```
+Este script foi editado e testado para funcionar na versao community 2.5.2 do pfsense
 
 ### Sugestão de Job para o Bacula
 
@@ -40,4 +36,13 @@ FileSet {
     File = /opt/bkp-pfsense
   }
 }
+```
+
+### Ideia original
+
+Kibado do site do bacula.lat e da documentacao oficial do pfsense 
+
+```sh
+https://docs.netgate.com/pfsense/en/latest/backup/remote-backup.html
+https://www.bacula.lat/pre-script-para-backup-de-firewalls-pfsense/
 ```
